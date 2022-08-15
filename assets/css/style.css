@@ -2,23 +2,19 @@
 :root{
     --color1: #443240;
     --color2: #705c6c;
-    --color3: #324044;
     --color4: #695b66;
     --color5: #8f848c;
     --color6: #b4adb3;
     --color7: #dad6d9;
     --color8: #d6d6d6;
+    --color9: #1d1d1d;
 }
 
 .light-theme{
     --color1: #443240;
-    --color2: #523f4e;
-    --color3: #324044;
-    --color4: #695b66;
-    --color5: #8f848c;
-    --color6: #b4adb3;
-    --color7: #dad6d9;
+    --color2: #31272f;
     --color8: #413f42;
+    --color9: #dad6d9;
 }
 
 /* reset */
@@ -132,6 +128,7 @@ section.main_container h1{
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
+    color: var(--color9);
 }
 
 /* main - projetos */
@@ -193,19 +190,34 @@ div.descricao p{
 div.descricao ul{
     display: flex;
     margin-top: .7rem;
+    column-gap: .6rem;
 }
 
 div.descricao ul li img{
     width: 60px;
 }
 
+div.descricao a{
+    margin-top: .8rem;
+    color: var(--color8);
+}
+
+div.descricao a:hover{
+    margin-top: .8rem;
+    color: var(--color2);
+}
+
 div.projeto_container label.desc{
     position: absolute;
     bottom: 65px;
-    right: 5px;
+    right: 8px;
     color: #695b66;
     cursor: pointer;
     z-index: 3;
+}
+
+div.projeto_container label.desc:hover{
+    color: var(--color1);
 }
 
 div.projeto_container label.desc i{
@@ -219,6 +231,7 @@ article.article_projeto{
 }
 
 article.article_projeto h3{
+    padding-left: .7rem;
     color: var(--color7);
 }
 
@@ -260,5 +273,5 @@ section.footer_container{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color8);
+    color: #fff;
 }
