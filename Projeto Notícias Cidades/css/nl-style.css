@@ -1,0 +1,114 @@
+:root{
+    --bg-color-red: #b10333;
+    --bg-color-cobalt: #294c71;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* header */
+
+header{
+    height: 233px;
+    width: 100%;
+    background: url(../img/fundo.png);
+}
+
+.header-container{
+    height: 175px;
+    width: 750px;
+    padding-top: 25px;
+    margin: 0 auto;
+    background: url(../img/detalhe-topo.png) right top no-repeat;
+}
+
+.header-menu{
+    margin-top: 30px;
+}
+
+.header-menu ul{
+    display: flex;
+}
+
+.header-menu a:hover{
+    color: #870529;
+    background-color: #fff;
+    border-bottom: 3px solid #870529;
+}
+
+.header-menu a{
+    background: var(--bg-color-red);
+    padding: 1em 1.5em;
+    font-size: 0.9em;
+    display: block;
+    color: #fff;
+    border-bottom: 3px solid var(--bg-color-red);
+}
+
+/* main */
+.main-container{
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+.content-container{
+    margin: 10px 0;
+    padding: 5px;
+    background: url(../img/fundo-caixa.png);
+}
+
+.content-container h2{
+    background: var(--bg-color-cobalt);
+    color: #fff;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.sub-content{
+    margin-top: 5px;
+    padding: 5px;
+    background: #fff;
+}
+
+.sub-content h3{
+    font-size: 0.8em;
+    background-color: var(--bg-color-red);
+    text-transform: uppercase;
+    color: #fff;
+    padding: 3px;
+    display: inline;
+}
+
+.img img{
+    border: 3px solid #dfdfdf;
+    display: inline;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    background: var(--bg-color-cobalt);
+    padding: 20px 0;
+}
+
+footer p{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}

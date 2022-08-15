@@ -1,0 +1,190 @@
+:root{
+    --bg-color-red: #b10333;
+    --bg-color-cobalt: #294c71;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* header */
+
+header{
+    height: 233px;
+    width: 100%;
+    background: url(../img/fundo.png);
+}
+
+.header-container{
+    height: 175px;
+    width: 750px;
+    padding-top: 25px;
+    margin: 0 auto;
+    background: url(../img/detalhe-topo.png) right top no-repeat;
+}
+
+.header-menu{
+    margin-top: 30px;
+}
+
+.header-menu ul{
+    display: flex;
+}
+
+.header-menu a:hover, #home{
+    color: #870529;
+    background-color: #fff;
+    border-bottom: 3px solid #870529;
+}
+
+.header-menu a{
+    background: var(--bg-color-red);
+    padding: 1em 1.5em;
+    font-size: 0.9em;
+    display: block;
+    color: #fff;
+    border-bottom: 3px solid var(--bg-color-red);
+}
+
+/* main */
+.main-container{
+    max-width: 750px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* lateral */
+
+.container1{
+    width: 180px;
+}
+
+.content-container{
+    margin: 10px 0;
+    padding: 5px;
+    background: url(../img/fundo-caixa.png);
+}
+
+.content-container h2{
+    background: var(--bg-color-cobalt);
+    color: #fff;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.sub-content, .menu-noticias-pocket{
+    margin-top: 5px;
+    padding: 5px;
+    background: #fff;
+}
+
+.menu-entrevistas a{
+    font-size: 0.9em;
+    padding: 3px;
+    color: #000;
+    line-height: 30px;
+    display: block;
+}
+
+.menu-entrevistas a:hover{
+    color: #a1a1a1;
+    padding-left: 20px;
+    background: url(../img/marcador.png) left no-repeat;
+}
+
+#email{
+    padding: 5px;
+    border: 3px solid #7a7a7a;
+    width: 90%;
+}
+
+#submit{
+    padding: 5px;
+    background: var(--bg-color-red);
+    color: #fff;
+    border: 2px solid #870529;
+    width: 80px;
+}
+
+/* meio */
+
+.container2{
+    width: 270px;
+}
+
+.sub-content h3{
+    font-size: 0.8em;
+    background-color: var(--bg-color-red);
+    text-transform: uppercase;
+    color: #fff;
+    padding: 3px;
+    display: inline;
+}
+
+.img{
+    border: 3px solid #dfdfdf;
+    display: inline;
+    max-width: 100%;
+}
+
+.leia-mais{
+    color: var(--bg-color-red);
+    text-decoration: underline;
+}
+
+.menu-noticias-pocket a{
+    display: flex;
+}
+
+.menu-noticias-pocket img{
+    width: 80px;
+    margin: 5px;
+    margin-bottom: 0;
+}
+
+.menu-noticias-pocket li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-noticias-pocket h3{
+    color: #3e7ab9;
+    padding-top: 2.2px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.menu-noticias-pocket p{
+    font-size: 0.7em;
+    color: #000;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    background: var(--bg-color-cobalt);
+    padding: 20px 0;
+}
+
+footer p{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}

@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root{
+    --bg-yellow: #ffc107;
+    --color-a-nav-menu: #00000080;
+    --color-a-nav-menu-strong: #000000c4;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid #ff0000; */
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+html, body{
+    width: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+header.menu-bg{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ffc1078e;
+}
+
+div.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* menu nav */
+
+nav.menu-header ul{
+    display: flex;
+    align-items: center;
+    column-gap: .9rem;
+}
+
+nav.menu-header a{
+    font-size: .95rem;
+    display: block;
+    color: var(--color-a-nav-menu);
+    transition: .15s;
+}
+
+nav.menu-header a:hover{
+    color: #000;
+}
+
+nav.menu-mobile label.checkbtn{
+    display: none;
+}
+
+/* entrar */
+
+nav.menu-header ul li a.singin{
+    background: transparent;
+    font-size: .9rem;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: .75rem 1rem;
+    color: #fff;
+    transition: .15s;
+}
+
+nav.menu-header ul li a.singin:hover{
+    color: #000;
+    background: #fff;
+}
+
+/* menu mobile */
+
+#checkbox-menu{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: .25s ease-in-out;
+}
+
+label span:nth-child(1){
+    top: 0;
+}
+label span:nth-child(2){
+    top: 8px;
+}
+label span:nth-child(3){
+    top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+/* main */
+
+main{
+    background-color: #e7e7e7;
+}
+
+/* main-header */
+
+main header.header-main-container{
+    background: var(--bg-yellow);
+}
+
+div.header-main-topo{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    padding: 3.2rem 1rem 0;
+    margin: 0 auto ;
+}
+
+/* esquerda */
+
+section.esquerda{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    max-width: 550px;
+}
+
+/* texto inicial */
+
+article.textoInicial h1{
+    font-size: 3.5rem;
+    font-family: var(--font-poppins);
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+article.textoInicial p{
+    line-height: 1.18rem;
+}
+
+/* cadastrar e-mail */
+
+form.cadastrarEmail{
+    margin: 1.4rem 0;
+    display: flex;
+}
+
+form.cadastrarEmail input[type="email"], form.cadastrarEmail input[type="submit"]{
+    max-height: 47px;
+    border: 0;
+    outline: none;
+    padding: .5rem .8rem;
+}
+
+form.cadastrarEmail input[type="email"]{
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+form.cadastrarEmail input[type="email"]::placeholder, form.cadastrarEmail input[type="email"], form.cadastrarEmail input[type="submit"]{
+    font-size: 1rem;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+}
+
+form.cadastrarEmail input[type="submit"]{
+    background-color: var(--color-a-nav-menu);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: .15s;
+}
+
+form.cadastrarEmail input[type="submit"]:hover{
+    background-color: var(--color-a-nav-menu-strong);
+}
+
+/* disponibilidade mobile */
+
+article.mobile p a.icons, section.redes a.icons, section.ancoraTopo a{
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: .6rem .7rem;
+    transition: .15s;
+}
+
+article.mobile p a.icons:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* section postagens */
+
+section.sobre{
+    border-bottom: 1px solid #cccccc;
+    padding: 3.5rem 0;
+}
+
+div.secao{
+    max-width: 1100px;
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+section.sobre section{
+    display: flex;
+    align-items: center;
+}
+
+section.sobre h2{
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-bottom: .8rem;
+}
+
+section.sobre p{
+    margin-bottom: .8rem;
+    line-height: 1.2rem;
+    color: #131313;
+}
+
+/* margins dos postagens */
+
+article.direitinha{
+    margin-left: 3rem;
+}
+
+article.esquerdinha{
+    margin-right: 3rem;
+}
+
+/*botao veja mais*/
+
+article a.seeplus{
+    padding: .6rem .8rem;
+    display: inline-block;
+    background-color: var(--bg-yellow);
+    color: #fff;
+    border-radius: 5px;
+}
+
+article a.seeplus:hover{
+    color: var(--bg-yellow);
+    background-color: #fff;
+    outline: 2px solid var(--bg-yellow);
+}
+
+/*footer main*/
+
+footer.footer-main{
+    padding: 4rem 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+div.footer-main-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: .5rem;
+}
+
+div.footer-main-container section{
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 350px;
+    line-height: 1.2rem;
+    color: var(--color-a-nav-menu);
+}
+
+div.footer-main-container section article{
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+    margin: .8rem 0;
+}
+
+div.footer-main-container section article h3{
+    font-family: var(--font-poppins);
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* footer*/
+
+footer.baixo{
+    padding: 1.5rem 1rem;
+}
+
+div.footer-container{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* menu footer */
+
+section.ancoraTopo a{
+    color: var(--color-a-nav-menu);
+}
+
+section.ancoraTopo a:hover{
+    color: var(--color-a-nav-menu-strong);
+}
+
+article.copyright p{
+    color: var(--color-a-nav-menu);
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* redes footer */
+
+section.redes{
+    display: flex;
+    column-gap: .7rem;
+}
+
+section.redes a.footer-icon, section.ancoraTopo a{
+    border-color: var(--color-a-nav-menu);
+    color: var(--color-a-nav-menu);
+}
+
+section.redes a.footer-icon:hover, section.ancoraTopo a:hover{
+    border-color: var(--color-a-nav-menu-strong);
+    background-color: var(--color-a-nav-menu-strong);
+    color: #fff;
+}
+
+/* responsividade */
+
+@media only screen and (min-width: 320px) and (max-width: 1019px){
+    /* reset */
+    figure.direita img,
+    section.sobre img,
+    div.footer-main-container img{
+        display: none;
+    }
+
+    /* main header */
+    section.esquerda{
+        margin: 1.6rem auto;
+    }
+
+    article.textoInicial h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    /* main sobre */
+    section.sobre{
+        padding: 2rem 0;
+    }
+
+    article.esquerdinha, article.direitinha{
+        margin: 0;
+    }
+
+    /* footer main */
+    div.footer-main-container section{
+        max-width: 100%;
+    }
+
+    div.footer-main-container section article p, div.secao p{
+        text-align: justify;
+    }
+
+    /* footer */
+    div.footer-container{
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+    
+    footer.footer-main{
+        padding: 2rem 0;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1019px){
+    /* header main */
+    article.textoInicial h1{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    /* footer main */
+    div.footer-main-container{
+        row-gap: 1.5rem;
+    }
+
+    div.footer-main-container section{
+        flex-flow: row nowrap;
+        justify-content: center;
+        column-gap: .6rem;
+    }
+        
+    div.footer-main-container img{
+        display: block;
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    /* header */
+    header.menu-bg{
+        background: var(--bg-yellow);
+    }
+    
+    /* menu hamburguer */
+    nav.menu-header label.checkbtn{
+        display: block;
+    }
+
+    nav.menu-header ul{
+        background-color: #ffc107;
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: auto;
+        top: 62.06px;
+        right: -100%;
+        padding: .8rem 0;
+        transition: all .4s;
+    }
+
+    nav.menu-header ul li{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    nav.menu-header ul li:last-child{
+        margin-bottom: 0;
+    }
+
+    nav.menu-header ul li a{
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+        padding: .3rem 0;
+    }
+
+    nav.menu-header ul li a:hover{
+        background-color: #f7bb07;
+    }
+
+    nav.menu-header ul li a.singin{
+        border: 0;
+        font-size: 1.3rem;
+    }
+
+    #checkbox-menu:checked ~ ul{
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1019px){
+    /* header */
+    nav.menu-header{
+        display: flex;
+    }
+    /* main header */
+    article.textoInicial h1{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    
+    section.sobre img{
+        display: block;
+    }
+
+    div.secao section img.esquerdinha-img{
+        width: 60%;
+    }
+
+    div.secao section img.direitinha-img{
+        width: 40%;
+    }
+
+    article.direitinha{
+        margin-left: 2rem;
+    }
+
+    article.esquerdinha{
+        margin-right: 2rem;
+    }
+
+    /* footer */
+    div.footer-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    footer.footer-main{
+        padding: 2rem 0;
+    }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1097px){
+    /* main header */
+    article.textoInicial h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    /* main footer */
+    div.footer-main-container{
+        justify-content: center;
+        gap: 2rem 8rem;
+    }
+}

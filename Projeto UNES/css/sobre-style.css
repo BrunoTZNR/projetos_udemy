@@ -1,0 +1,150 @@
+/* default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    font-family: arial, sans-serif;
+}
+
+/* variaveis */
+
+:root{
+    --border-color: rgb(90, 105, 168);
+    --color-strong: rgb(56, 63, 93);
+}
+
+/* cabecinha */
+
+.cabecinha{
+    border-top: 4px solid var(--border-color);
+}
+
+.comeco{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.menu a{
+    color: var(--border-color);
+    font-size: 1.25em;
+}
+
+.menu a:hover{
+    color: var(--color-strong);
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divisao{
+    margin: 0 10px;
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    padding: 0 10px;
+}
+
+/* principal */
+
+.principal{
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 45px auto;
+    color: var(--border-color);
+}
+
+/* quem somos */
+
+.somos h1{
+    font-size: 2em;
+    color: var(--color-strong);
+}
+
+.somos p{
+    font-size: 1.15em;
+    padding-top: 16px;
+    text-indent: 30px;
+}
+
+/* motivos */
+
+.motivos{
+    margin-top: 25px;
+}
+
+.motivos h1{
+    font-size: 2em;
+    color: var(--color-strong);
+}
+
+.motivos li{
+    list-style: decimal;
+}
+
+.motivos ol{
+    font-size: 1.15em;
+    padding-top: 16px;
+    margin-left: 21px;
+}
+
+/* objetivos */
+
+.objetivos{
+    margin-top: 25px;
+}
+
+.objetivos h1{
+    font-size: 2em;
+    color: var(--color-strong);
+}
+
+.objetivos p{
+    font-size: 1.15em;
+    padding-top: 16px;
+    text-indent: 30px;
+}
+
+/* span */
+
+.span-1{
+    font-weight: bold;
+}
+
+.span-2{
+    font-style: italic;
+}
+
+/* baixinho */
+
+.baixinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    color: var(--color-strong);
+    position: fixed;
+    bottom: 0;
+    background-color: var(--color-strong);
+    color: #fff;
+}

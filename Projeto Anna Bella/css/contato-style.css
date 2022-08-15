@@ -1,0 +1,118 @@
+/* default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    font-family: arial, sans-serif;
+    background: url("../img/fundo.png") repeat;
+}
+
+:root{
+    --color-bg-strong: #c5c5b2;
+    --color-bg: #e8e8d9;
+    --color: #4b566a;
+    --color-strong: rgb(54, 39, 19);
+}
+
+/* header */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 900px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    background-color: var(--color-bg-strong);
+}
+
+.menu a{
+    color: var(--color);
+    font-size: 1.15em;
+}
+
+.menu a:hover{
+    color: var(--color-strong);
+    font-size: 1.15em;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    margin: 0 10px;
+}
+.separacao{
+    color: var(--color-strong);
+}
+
+/* main */
+
+.container-main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: var(--color-bg);
+}
+
+.container-main img{
+    border: 10px solid var(--color-bg-strong);
+    margin: 0 auto 20px;
+}
+
+.header{
+    margin-bottom: 15px;
+}
+
+.header h3{
+    color: var(--color);
+    padding: 15px 0 20px;
+}
+
+.header p{
+    font-size: 1.1em;
+}
+
+.contato-de-fato{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.contato-de-fato p:nth-child(1){
+    padding-bottom: 3px;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    font-weight: 600;
+}

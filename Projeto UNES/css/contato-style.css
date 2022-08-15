@@ -1,0 +1,197 @@
+/* default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    font-family: arial, sans-serif;
+}
+
+/* variaveis */
+
+:root{
+    --border-color: rgb(90, 105, 168);
+    --color-strong: rgb(56, 63, 93);
+}
+
+/* cabecinha */
+
+.cabecinha{
+    border-top: 4px solid var(--border-color);
+}
+
+.comeco{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.menu a{
+    color: var(--border-color);
+    font-size: 1.25em;
+}
+
+.menu a:hover{
+    color: var(--color-strong);
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divisao{
+    margin: 0 10px;
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    padding: 0 10px;
+}
+
+/* contato */
+
+.contato{
+    display: flex;
+    flex-flow: wrap column;
+    max-width: 900px;
+    margin: 45px auto;
+    color: var(--border-color);
+}
+
+/* entre em contato */
+
+.entre h1{
+    font-size: 2em;
+    color: var(--color-strong);
+}
+
+.entre p{
+    padding: 16px 0 5px 0;
+    font-size: 1.15em;
+    text-indent: 30px;
+}
+
+/* formulario */
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-strong);
+    border-top: 1px solid var(--color-strong);
+}
+
+/* primeiro */
+
+.first{
+    width: 450px;
+    height: 300px;
+    font-weight: bold;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailform, .assuntoform{
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.emailform{
+    padding-bottom: 40px;
+}
+
+.first input[type="email"], .first input[type="text"]{
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    padding: 3px 8px;
+    font-size: 1.1em;
+}
+
+.first input[type="email"], .first input[type="text"]:focus{
+    border-color: var(--color-strong);
+}
+
+/* segundo */
+
+.second{
+    width: 450px;
+    height: 300px;
+    font-weight: bold;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc-label{
+    padding-bottom: 10px;
+}
+
+.second textarea{
+    padding: 8px 5px;
+    font-size: 1.15em;
+    width: 360px;
+    height: 250px;
+    display: block;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+}
+
+/*botao*/
+
+.third{
+    margin: 25px auto 10px;
+}
+
+.third input[type="submit"]{
+    width: 95px;
+    height: 35px;
+    justify-content: center;
+    outline: none;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--border-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.third input[type="submit"]:hover{
+    background-color: var(--color-strong);
+    border-color: var(--color-strong);
+    color: #fff;
+}
+
+/* baixinho */
+
+.baixinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    color: var(--color-strong);
+    position: fixed;
+    bottom: 0;
+    background-color: var(--color-strong);
+    color: #fff;
+}

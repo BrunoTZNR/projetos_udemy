@@ -1,0 +1,287 @@
+:root{
+    --purple: #7c25f8;
+    --purple-strong: #6207e3;
+    --cian: #9bf0e1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid red;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body, html{
+    font-family: 'arial', sans-serif;
+    overflow-x: hidden;
+    background: url(../img/capa.png), url(../img/ruido.png), linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+}
+
+/* header */
+
+header.header{
+    position: fixed;
+    width: 100%;
+    background-color: #0000009e;
+    z-index: 5;
+}
+
+header section.header-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.header-menu ul{
+    display: flex;
+    align-items: center;
+    column-gap: .4rem;
+}
+
+nav.header-menu ul span{
+    color: #fff;
+    padding: .2rem .3rem;
+}
+
+nav.header-menu ul li a{
+    color: #fff;
+    display: block;
+    padding: .2rem .5rem;
+}
+
+nav.header-menu ul li a:hover{
+    color: var(--cian);
+}
+
+/* main */
+
+main section.main-container header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+main section.main-container section.carrosel{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+main section.main-container section.carrosel a i{
+    color: #ffffff93;
+}
+
+section.carrosel div.carrosel-content{
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+}
+
+section.carrosel div.carrosel-content div.article-container{
+    display: block;
+    /* position: absolute; */
+    /* width: 700px; */
+}
+
+section.carrosel div.carrosel-content article{
+    display: flex;
+    flex-direction: column;
+    width: ;
+    /* position: relative; */
+    left: 0; /*-1118px*/
+    background-color: green;
+}
+
+section.carrosel div.carrosel-content article:nth-child(2){
+    background-color: red;
+}
+
+section.carrosel div.carrosel-content article h1{
+    font-size: 5.4rem;
+    font-weight: 900;
+    color: #fff;
+    /* width: 1100px; */
+    text-align: center;
+}
+
+section.carrosel div.carrosel-content article div.botoes{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    column-gap: 1rem;
+}
+
+section.carrosel div.carrosel-content article div.botoes a{
+    display: block;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+}
+
+div.carrosel-content article div.botoes a.purple{
+    background: var(--purple);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+div.carrosel-content article div.botoes a.purple:hover{
+    background: var(--purple-strong);
+}
+
+div.carrosel-content article div.botoes a.default-a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: .2rem solid #fff;
+}
+
+div.carrosel-content article div.botoes a.default-a:hover{
+    background: #fff;
+    color: #000;
+}
+
+/* sobre spotify */
+
+section.about-spotify-container{
+    background-color: #fff;
+}
+
+section.about-spotify, section.easy-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem 0;
+}
+
+section.about-spotify figure.imagens{
+    max-width: 532px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem 2rem;
+}
+
+section.about-spotify article.about-content{
+    padding: 0 2rem;
+}
+
+article.about-content h2, article.about-content h3{
+    color: var(--purple);
+    margin-bottom: .8rem;
+}
+
+article.about-content h2{
+    font-size: 3rem;
+}
+
+article.about-content h3{
+    font-size: 2rem;
+}
+
+article.about-content p{
+    line-height: 1.35rem;
+    margin-bottom: .8rem;
+}
+
+/* easy */
+
+section.main-container section.easy-container{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+section.easy-container article.about-content{
+    max-width: 350px;
+    padding: 0;
+}
+
+article.second-color h2, article.second-color p{
+    color: #fff;
+}
+
+article.second-color h3{
+    color: var(--cian);
+}
+
+figure.celulares{
+    display: flex;
+    column-gap: 2rem;
+    margin-left: 7rem;
+    transform: rotate(30deg);
+}
+
+figure.celulares img{
+    width: 300px;
+}
+
+/* footer */
+
+footer{
+    background-color: #000;
+    padding: 3rem 0 2rem;
+    position: relative;
+}
+
+footer section.footer-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section.footer-container section.esquerdinha{
+    display: flex;
+}
+
+footer section.footer-container section.esquerdinha nav.navs{
+    margin: 0 2.5rem;
+}
+
+section.esquerdinha nav.navs ul h5{
+    display: block;
+    color: #7c7c7c;
+    text-transform: uppercase;
+    margin-bottom: .7rem;
+}
+
+section.esquerdinha nav.navs ul li{
+    display: block;
+    margin-bottom: .4rem;
+    margin-left: .4rem;
+}
+
+section.esquerdinha nav.navs ul li a{
+    display: block;
+    color: #fff;
+    font-size: .8rem;
+}
+
+section.esquerdinha nav.navs ul li a:hover{
+    color: var(--cian);
+}
+
+section.footer-container section.direitinha nav.redes ul{
+    display: flex;
+    column-gap: .6rem;
+}

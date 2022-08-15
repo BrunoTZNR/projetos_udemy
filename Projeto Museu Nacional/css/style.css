@@ -1,0 +1,257 @@
+:root{
+    --color1: #af670a;
+    --color1-strong: #86521a;
+    --color-green: #227115;
+    --color4: #cdc8b1;
+    --color4-strong: #ebe7dd;
+    --input-color: #c5ba92;
+    --input-color-strong: #9b9271;
+    --border-color: #535858;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+a{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h3, h4{
+    text-transform: uppercase;
+}
+
+body{
+    background: #f4f2ec url(../img/fundo.png) repeat-x;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+header{
+    padding: 20px 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span{
+    color: #fff;
+}
+
+.logo a{
+    font-size: 2em;
+}
+
+.menu ul{
+    display: flex;
+    column-gap: 20px;
+}
+
+.menu a{
+    font-size: 0.85em;
+}
+
+.menu a:hover, #here{
+    color: var(--color-green);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* main */
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container{
+    width: 710px;
+}
+
+.postagens{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1em;
+    justify-content: space-between;
+    row-gap: 1em;
+    margin: 1em 0;
+}
+
+.content-container{
+    background-color: #f3f3f3;
+    padding: 5px;
+    width: 330px;
+    height: 250px;
+}
+
+.content-container h3{
+    margin-bottom: 0.6em;
+    font-size: .9em;
+    color: var(--color-green);
+}
+
+.exposicoes li{
+    list-style: inherit;
+    list-style-position: inside;
+}
+
+.exposicoes a{
+    font-size: 0.85em;
+    margin-left: -0.8em;
+}
+
+.exposicoes a:hover, .right:hover{
+    color: var(--color1-strong);
+}
+
+.historia p{
+    font-size: 0.9em;
+    color: var(--border-color);
+}
+
+.right{
+    font-size: 0.85em;
+    color: var(--color1);
+    font-weight: bold;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0.6em 0;
+}
+
+/* aside */
+
+.aside-container{
+    width: 350px;
+}
+
+.bottom-container{
+    display: flex;
+    row-gap: 1.5em;
+    flex-direction: column;
+}
+
+.visita{
+    display: flex;
+    flex-direction: column;
+    background-color: #cdc8b1;
+    padding: 1.2em 1em;
+    margin-top: 1em;
+}
+
+.inputs{
+    display: flex;
+    column-gap: 10px;
+    margin: .6em auto;
+}
+
+.visita h4{
+    font-size: .8em;
+    color: var(--color1-strong);
+}
+
+.visita label{
+    font-size: .8em;
+}
+
+.visita input[type="date"], input[type="number"]{
+    border: 1px solid var(--input-color-strong);
+    outline: none;
+}
+
+.visita input[type="date"]{
+    width: 90px;
+    height: 20px;
+    padding: 0.2em;
+}
+
+::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
+.visita input[type="number"]{
+    width: 45px;
+    height: 20px;
+    padding: 0.2em;
+}
+
+.visita input[type="submit"]{
+    cursor: pointer;
+    width: 100%;
+    font-size: .9em;
+    outline: none;
+    border: 0;
+    padding: .7em 1em;
+    color: #fff;
+    background-color: var(--input-color-strong);
+}
+
+.galeria{
+    background-color: #ebe7dd;
+    padding: 1.2em 1em;
+}
+
+.galeria h4{
+    color: var(--color1-strong);
+    font-size: .8em;
+    padding-bottom: 1.4em;
+}
+
+.galeria-fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.galeria-fotos a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 135px;
+    width: 135px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    background: url(../img/fundo-foto.png) no-repeat;
+}
+
+/* footer */
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    flex-direction: column;
+    margin-top: 1.5em;
+    padding: 1.5em 0;
+    background: url(../img/fundo-rodape.png) no-repeat top;
+}
+
+.footer-menu ul{
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer-menu a, .footer-baixo p{
+    font-size: 0.8em;
+}
+
+.footer-menu a:hover, .footer-baixo a:hover{
+    color: var(--color-green);
+}

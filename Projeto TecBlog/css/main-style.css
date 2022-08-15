@@ -1,0 +1,146 @@
+:root{
+    --color-h1: #4e4e4e;
+    --bg-body: #e6e6e6;
+    --color-yellow: #f7b600;
+    --color-darkgrey: #565656;
+    --color-lightgrey: #ccc;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: var(--bg-body);
+}
+
+/*header*/
+
+.container-header{
+    background-color: var(--color-yellow);
+    /*height: 136px;*/
+}
+
+.container-header h1{
+    color: var(--color-h1);
+    font-size: 2.5em;
+    text-align: center;
+    padding: 25px 0 20px 0;
+}
+
+.white{
+    color: #fff;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.menu a{
+    padding: 10px;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.menu a:hover{
+    background-color: #fff;
+    color: var(--color-yellow);
+}
+
+/* main organization */
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+aside{
+    margin: 15px 0 0 20px;
+}
+
+/*main-post*/
+
+.post{
+    max-width: 660px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0 20px;
+}
+
+.post-header h2{
+    color: var(--color-yellow);
+}
+
+.post-header p{
+    padding-bottom: 25px;
+    font-size: 0.8em;
+}
+
+.post img{
+    margin-bottom: 5px;
+}
+
+.post a{
+    color: var(--color-yellow);
+}
+
+.post a:hover{
+    text-decoration: underline;
+}
+
+/*main-aside*/
+
+.aside-width{
+    max-width: 240px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.aside-width h3{
+    color: var(--color-darkgrey);
+    background-color: var(--color-lightgrey);
+    padding: 5px;
+}
+
+.aside-content{
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.aside-content a, .menu-categorias a{
+    color: var(--color-yellow);
+}
+
+.aside-content a:hover, .menu-categorias a:hover{
+    text-decoration: underline;
+}
+
+/*footer*/
+
+.baixinho{
+    font-weight: bold;
+    padding: 20px;
+    background-color: var(--color-lightgrey);
+    text-align: center;
+}
