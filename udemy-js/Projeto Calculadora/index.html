@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="main_container">
+      <section class="visor_container">
+        <input type="text" name="visor" class="visor" placeholder="0" disabled>
+      </section>
+
+      <section class="teclas_container">
+        <div onclick="calcular('acao', 'c')" class="teclas clear">c</div>
+        <div onclick="calcular('acao', '/')" class="teclas div">/</div>
+        <div onclick="calcular('acao', '*')" class="teclas mult">*</div>
+        <div onclick="calcular('valor', 7)" class="teclas seven">7</div>
+        <div onclick="calcular('valor', 8)" class="teclas eight">8</div>
+        <div onclick="calcular('valor', 9)" class="teclas nine">9</div>
+        <div onclick="calcular('acao', '-')" class="teclas minus">-</div>
+        <div onclick="calcular('valor', 4)" class="teclas four">4</div>
+        <div onclick="calcular('valor', 5)" class="teclas five">5</div>
+        <div onclick="calcular('valor', 6)" class="teclas six">6</div>
+        <div onclick="calcular('acao', '+')" class="teclas plus">+</div>
+        <div onclick="calcular('valor', 1)" class="teclas one">1</div>
+        <div onclick="calcular('valor', 2)" class="teclas two">2</div>
+        <div onclick="calcular('valor', 3)" class="teclas three">3</div>
+        <div onclick="calcular('acao', '=')" class="teclas equals">=</div>
+        <div onclick="calcular('valor', 0)" class="teclas zero">0</div>
+        <div onclick="calcular('acao', '.')" class="teclas comma">.</div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

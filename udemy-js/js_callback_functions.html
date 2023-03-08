@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callback functions</title>
+
+  <script>
+    function verArtigo(id) {
+      //...
+
+      if(false) {
+        callTrue('Como conseguir emprego', 'Quero muito um emprego, como consigo?');
+      } else {
+        callFail('Erro ao carregar o artigo!');
+      }
+    }
+
+    let callTrue = (titulo, descricao) => {
+      document.write('<h1>' + titulo + '</h1><hr><p>' + descricao + '</p>');
+    }
+
+    let callFail = (error) => {
+      document.write('<p><b>ERROR:</b> ' + error + '</p>');
+    }
+
+    verArtigo(1);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

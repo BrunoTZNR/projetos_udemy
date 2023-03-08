@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mata Mosquito</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function iniciarGame() {
+      let dificuldade = document.getElementById('dificuldade').value;
+
+      console.log(dificuldade);
+
+      if (dificuldade === 'x') {
+        alert("Selecione uma dificuldade!");
+        window.location.reload();
+      } else {
+        window.location.href = './gameHome.html?' + dificuldade;
+      }
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <select id="dificuldade">
+      <option disabled selected value="x">-- Selecione a dificuldade --</option>
+      <option value="facil">facil</option>
+      <option value="normal">normal</option>
+      <option value="dificil">dificil</option>
+    </select>
+
+    <button onclick="iniciarGame()">iniciar jogo</button>
+  </main>
+</body>
+</html>

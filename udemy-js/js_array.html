@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+  <script>
+    let objetos = []; 
+
+    function add() {
+      let input = document.getElementById('txt')
+
+      if (input.value == null) {
+        alert("Informe um valor válido");
+        input.value = '';
+      } else if (objetos.indexOf(input.value) !== -1) {
+        alert("Objeto já foi adicionado");
+        input.value = '';
+      } else {
+        objetos.push(input.value);
+        input.value = '';
+
+        console.log(objetos);
+      }
+    }
+
+    function ord() {
+      objetos.sort();
+
+      console.log(objetos);
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="txt">
+  <button onclick="add()">Adicionar</button>
+  <button onclick="ord()">Ordenar</button>
+</body>
+</html>
